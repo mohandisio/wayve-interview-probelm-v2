@@ -1,0 +1,10 @@
+# Local-only planning notes and Claude session instructions
+docs/
+CLAUDE.local.md
+
+# Python
+__pycache__/
+.ruff_cache/
+
+# macOS
+.DS_Store
