@@ -25,7 +25,7 @@ Each CSV in `data/` holds one signal. Rows are keyed by `run_id` and `timestamp`
 | `model_output.csv` | `model_waypoint` | Waypoint planned by the driving model |
 | `controller_output.csv` | `controller_waypoint` | Waypoint executed by the controller |
 
-Waypoints are single 3D points in the ego vehicle frame (metres), stored as strings such as `"{'x': 13.0, 'y': 0.02, 'z': 0.0}"`.
+Waypoints are stored as strings such as `"{'x': 13.0, 'y': 0.02, 'z': 13.1}"`: `x` and `y` are a point in the ego vehicle frame (metres ahead, metres left) and `z` is the target speed (m/s).
 
 ## Running
 
