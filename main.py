@@ -11,7 +11,8 @@ Each CSV in data/ holds one signal logged during autonomous driving runs:
     model_output.csv        run_id, timestamp, model_waypoint
     controller_output.csv   run_id, timestamp, controller_waypoint
 
-Timestamps are Unix seconds.
+Timestamps are Unix seconds. Waypoints are single 3D points in the ego
+vehicle frame, stored as strings: "{'x': ..., 'y': ..., 'z': ...}" (metres).
 
 Safety drivers took over during some of these runs. Implement
 triage_interventions to find where interventions likely happened and

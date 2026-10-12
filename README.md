@@ -6,7 +6,7 @@ A redo of a CoderPad interview question from Wayve, worked through again without
 
 During autonomous driving runs, a safety driver can take over control of the vehicle. Each takeover is an intervention, and engineers need to triage it: find when it happened and work out what most likely caused it.
 
-You are given four signal logs from two runs. Using only these signals, implement `triage_interventions(signals)` in `main.py` so that it:
+You are given four signal logs from three runs. Using only these signals, implement `triage_interventions(signals)` in `main.py` so that it:
 
 1. Identifies where interventions likely happened.
 2. Reports the most likely cause of each one.
@@ -24,6 +24,8 @@ Each CSV in `data/` holds one signal. Rows are keyed by `run_id` and `timestamp`
 | `odometer_speed.csv` | `ego_speed` | Measured vehicle speed (m/s) |
 | `model_output.csv` | `model_waypoint` | Waypoint planned by the driving model |
 | `controller_output.csv` | `controller_waypoint` | Waypoint executed by the controller |
+
+Waypoints are single 3D points in the ego vehicle frame (metres), stored as strings such as `"{'x': 13.0, 'y': 0.02, 'z': 0.0}"`.
 
 ## Running
 
