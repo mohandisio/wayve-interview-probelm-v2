@@ -1,0 +1,22 @@
+TODO: 
+* Clean datasets
+- Find a way to clean up timestamps across all datasets
+
+Comapred 
+Expected speed vs Speed limit
+    if expected speed <= speed limit we are within speed limit 
+    else speed is above speed limit
+
+
+Step #2
+Speed Limit > Model > Controller > Actual Speed
+10 | 10 | 12 | 12 # model at fault
+10 | 12 | 12 | 12 # controller at fault
+
+
+Step #3
+Why is this happening 
+Maybe the cause is communcaiton between model and controller
+
+
+
